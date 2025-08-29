@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intro_flutter/components/custom_card.dart';
-import 'package:intro_flutter/pages/counter_screen_page.dart';
-import 'package:intro_flutter/examples/counter_screen_value_notifier.dart';
+import 'package:intro_flutter/examples/simple_change_notifier_example.dart';
+import 'package:intro_flutter/pages/counter_screen_value_notifier.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -25,8 +25,14 @@ class HomeScreen extends StatelessWidget {
                       title: 'Counter Screen',
                       description: 'Exemplo Contador',
                       icon: Icons.post_add_sharp,
-                      destination: CounterScreenValueNotifier())
+                      destination: CounterScreenValueNotifier()),
+                      CustomCard(
+                      title: 'Counter Screen',
+                      description: 'Exemplo Contador',
+                      icon: Icons.add_circle_outline,
+                      destination: SimpleChangeNotifierExample())
                 ],
+                
               ),
             ),
           ],
