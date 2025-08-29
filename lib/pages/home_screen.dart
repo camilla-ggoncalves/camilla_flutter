@@ -27,10 +27,15 @@ class HomeScreen extends StatelessWidget {
                       icon: Icons.post_add_sharp,
                       destination: CounterScreenValueNotifier()),
                       CustomCard(
-                      title: 'Counter Screen',
-                      description: 'Exemplo Contador',
+                      title: 'Profile',
+                      description: 'Exemplo perfil Camilla',
                       icon: Icons.add_circle_outline,
-                      destination: SimpleChangeNotifierExample())
+                      destination: SimpleChangeNotifierExample()),
+                      CustomCard(
+                        title: 'Change Notifier', 
+                        description: 'Exemplo com Change Notifier', 
+                        icon: Icons.account_box, 
+                        destination: CounterScreenValueNotifier())
                 ],
                 
               ),
