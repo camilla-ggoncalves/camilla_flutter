@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intro_flutter/components/custom_card.dart';
-import 'package:intro_flutter/examples/change_notifier_counter_screen.dart';
+import 'package:intro_flutter/examples/contador_change_notifier_camilla.dart';
 import 'package:intro_flutter/examples/simple_change_notifier_example.dart';
-import 'package:intro_flutter/pages/counter_screen_page.dart';
 import 'package:intro_flutter/pages/gps_page.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -23,12 +22,12 @@ class HomeScreen extends StatelessWidget {
             Expanded(
               child: ListView(
                 children: [
-                  CustomCard(
-                    title: 'Counter Screen',
-                    description: 'Exemplo Contador',
-                    icon: Icons.post_add_sharp,
-                    destination: CounterScreen(),
-                  ),
+                  // CustomCard(
+                  //   title: 'Counter Screen',
+                  //   description: 'Exemplo Contador',
+                  //   icon: Icons.post_add_sharp,
+                  //   destination: CounterScreen(),
+                  // ),
                   CustomCard(
                     title: 'Profile',
                     description: 'Exemplo perfil Camilla',
@@ -46,6 +45,12 @@ class HomeScreen extends StatelessWidget {
                     description: 'Exemplo com Pub Get',
                     icon: Icons.add_home_work,
                     destination: GpsPage(),
+                  ),
+                    CustomCard(
+                    title: 'Prova',
+                    description: 'Exercício com Listener Notifier',
+                    icon: Icons.add_home_work,
+                    destination: CounterScreen(),
                   ),
                 ],
               ),
